@@ -50,5 +50,8 @@ mysql -uroot -p123456 -e "GRANT ALL PRIVILEGES ON CONFLUENCE* TO 'root'@'localho
 sudo apt-get install -y libmysql-java
 mv /usr/share/java/mysql-connector-java-5.1.45.jar /opt/atlassian/confluence7_3_1/confluence/WEB-INF/lib
 
+for i in {1..200}; do echo "THIS IS DEVELOPERS BRANCH!!!!!!!!!!!!!!!!"; done
+
+
 sudo /etc/init.d/confluence stop
 sudo /etc/init.d/confluence start
